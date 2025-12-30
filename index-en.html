@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pick-A-Book (Decision Cards)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+  margin:40px;
+  background:#0f1115;
+  color:#eaeaf0;
+}
+h1{font-size:32px}
+.sub{opacity:.8;margin-bottom:24px}
+.card{
+  border:1px solid #333;
+  border-radius:12px;
+  padding:16px;
+  margin-bottom:16px;
+}
+.langToggle{
+  position:fixed;
+  top:16px;
+  right:16px;
+  background:#1a1c22;
+  border:1px solid #333;
+  border-radius:999px;
+  padding:6px;
+  display:flex;
+  gap:6px;
+}
+.langToggle a{
+  text-decoration:none;
+  color:#eaeaf0;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:13px;
+}
+.langToggle a.active{
+  background:#333;
+}
+button{
+  background:#2a2d35;
+  color:#fff;
+  border:1px solid #444;
+  padding:10px 14px;
+  border-radius:8px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="langToggle">
+  <a href="index.html">中文</a>
+  <a href="index-en.html" class="active">EN</a>
+</div>
+
+<h1>Pick-A-Book for Friends</h1>
+<p class="sub">
+When you don’t know what to read next, let a deck of cards decide.
+</p>
+
+<div class="card">
+<h3>What is this?</h3>
+<p>
+This is a zero-backend decision tool for readers with large TBR lists.
+Upload your Goodreads “to-read” CSV, draw one book per category,
+and confirm only what you actually plan to read.
+</p>
+</div>
+
+<div class="card">
+<h3>Key Rules</h3>
+<ul>
+<li>One draw per category per day</li>
+<li>Viewing ≠ choosing (only Confirm counts)</li>
+<li>Confirmed books enter cooldown (default 30 days)</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>How it works</h3>
+<ol>
+<li>Export your Goodreads library as CSV</li>
+<li>Upload it on this page</li>
+<li>Draw candidates by category</li>
+<li>Confirm the one you’ll read</li>
+</ol>
+</div>
+
+<p style="opacity:.6;margin-top:40px">
+All data stays on your device. No login. No tracking.
+</p>
+
+</body>
+</html>
